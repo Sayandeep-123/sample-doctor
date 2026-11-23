@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Lora", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-forest: #1b4332;
+  --color-forest-dark: #122b21;
+  --color-forest-light: #2d6a4f;
+  --color-forest-soft: #eaf1ed;
+  --color-sand: #f3efe6;
+  --color-sand-light: #faf8f5;
+  --color-sand-border: #e7e2d7;
+  --color-terracotta: #b8623b;
+  --color-terracotta-soft: #fbf1ec;
+  --color-charcoal: #1c2826;
+  --color-muted: #5e6c67;
+}
+
+/* Custom subtle scrollbar and utility classes */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset anchored sections so the sticky header never covers their titles */
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+::selection {
+  background-color: #2d6a4f26;
+  color: #1b4332;
+}
